@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MATCHDAY — Live Football Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <h1>Matchday</h1>
+        <div class="tagline">Live scores · fixtures · standings — updates in real time</div>
+      </div>
+    </div>
+    <div class="clock">
+      <div>Local kickoff time</div>
+      <div class="time" id="liveClock">--:--:--</div>
+    </div>
+  </header>
+
+  <div class="league-tabs" id="leagueTabs"></div>
+  <div class="sub-nav" id="subNav">
+    <button data-view="matches" class="active">Matches</button>
+    <button data-view="fixtures">Fixtures</button>
+    <button data-view="table">Table</button>
+  </div>
+
+  <div id="content"></div>
+
+  <footer>
+    <span>Data reflects scheduled kickoff times; live status &amp; minute clocks are computed from your device time.</span>
+    <span id="footNote"></span>
+  </footer>
+
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
